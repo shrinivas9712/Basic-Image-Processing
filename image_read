@@ -6,7 +6,7 @@ import numpy
 #to read a image you need to provide full path if image is in other directory if it's in same directory just name of image file will be enough
 
 image=cv2.imread('lena.jpg')
-#shape of image tells the dimension of image rows,columns,channels  --- channels is nothing but no for colored image its 3(as 3 colors red,green,blue(RGB))
+#shape of image tells the dimension of image rows,columns,channels  --- channels indicates no of color channels, for colored image its 3(as 3 colors red,green,blue(RGB))
 print(image.shape)
 #cv2.imshow() function helps to see which image is read
 cv2.imshow(image)
