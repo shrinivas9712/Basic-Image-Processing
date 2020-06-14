@@ -1,11 +1,16 @@
 #import the necessary package
 #opencv is the package for image processing in python to install it in conda  visit https://anaconda.org/anaconda/opencv
 import cv2
+
+
 #for numeric computation i need numpy package
 import numpy
-#to read a image you need to provide full path if image is in other directory if it's in same directory just name of image file will be enough
 
-image=cv2.imread('lena.jpg')
+#to read a image you need to provide full path if image is in other directory if it's in same directory just name of image file will be enough
+#if you are using own image just replace falls.jpg  with your own image file name
+
+
+image=cv2.imread('falls.jpg')
 #shape of image tells the dimension of image rows,columns,channels  --- channels indicates no of color channels, for colored image its 3(as 3 colors red,green,blue(RGB))
 print(image.shape)
 #cv2.imshow() function helps to see which image is read
